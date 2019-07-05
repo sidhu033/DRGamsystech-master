@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.drgamsystech">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/doctoricon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.EmergencyPatient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AddUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ReferedPatients"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.RedoxerUsers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ReferedPatientsDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UserHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.RedoxerUserDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FollowUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ForgetPass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MyProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ChangePassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UploadDocuments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ExpectedEarnings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FollowupDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ProfessionalDetails" />
+        <activity android:name=".activity.BankDetails" />
+        <activity android:name=".activity.PersonalProfile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

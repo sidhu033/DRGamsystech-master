@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyProfile">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myprotoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txmyprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/myprofile"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/helveticabold"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--Toolbar closed-->
+
+    <RelativeLayout
+        android:id="@+id/relpdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myprotoolbar"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgmyrofile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/mypname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgmyrofile"
+            android:layout_marginTop="@dimen/scale_5dp"
+            android:fontFamily="@font/helveticalight"
+            android:gravity="center_horizontal"
+            android:text=" DR. Faizal singh"
+            android:textSize="@dimen/scale_20dp" />
+    </RelativeLayout>
+
+         <!--personal details-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mypcard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relpdetails"
+            app:cardMaxElevation="@dimen/scale_10dp"
+            app:cardElevation="@dimen/scale_10dp"
+            app:cardCornerRadius="@dimen/scale_10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/scale_10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/mypuicon"
+                    android:layout_below="@+id/imgmypd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/iconmen"
+                    />
+
+                <TextView
+                    android:id="@+id/myptxtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/userIcon"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="@dimen/scale_20dp"
+                    android:fontFamily="@font/helveticalight"
+                    android:text="@string/personald"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Profession details-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/mypcard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypcard1"
+        app:cardMaxElevation="@dimen/scale_10dp"
+        app:cardElevation="@dimen/scale_10dp"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scale_5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mytie"
+                android:layout_below="@+id/imgmypd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icontie"
+                />
+
+            <TextView
+                android:id="@+id/myprofe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/userIcon"
+                android:gravity="center|left"
+                android:layout_marginLeft="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticalight"
+                android:text="@string/profdetails"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <!-- Bank details-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/mypcard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypcard2"
+        app:cardMaxElevation="@dimen/scale_10dp"
+        app:cardElevation="@dimen/scale_10dp"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scale_5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mybank"
+                android:layout_below="@+id/imgmypd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iconbank"
+                />
+
+            <TextView
+                android:id="@+id/myprofbank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/userIcon"
+                android:gravity="center|left"
+                android:layout_marginLeft="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticalight"
+                android:text="@string/bankdetails"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!-- Change password-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/mypcard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypcard3"
+        app:cardMaxElevation="@dimen/scale_10dp"
+        app:cardElevation="@dimen/scale_10dp"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scale_5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mychangep"
+                android:layout_below="@+id/imgmypd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iconlock"
+                />
+
+            <TextView
+                android:id="@+id/myprofchangep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/userIcon"
+                android:gravity="center|left"
+                android:layout_marginLeft="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticalight"
+                android:text="@string/Changepas"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!-- Change password-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/mypcard5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypcard4"
+        app:cardMaxElevation="@dimen/scale_10dp"
+        app:cardElevation="@dimen/scale_10dp"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scale_5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mydoc"
+                android:layout_below="@+id/imgmypd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icondocument"
+                />
+
+            <TextView
+                android:id="@+id/myprofdoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/userIcon"
+                android:gravity="center|left"
+                android:layout_marginLeft="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticalight"
+                android:text="@string/Changepas"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

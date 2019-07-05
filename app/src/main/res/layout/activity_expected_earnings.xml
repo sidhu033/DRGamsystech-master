@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ExpectedEarnings">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/expetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <!-- <ImageView
+                 android:id="@+id/imchpas"
+                 android:layout_width="33dp"
+                 android:layout_height="33dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/gham" />-->
+
+            <TextView
+                android:id="@+id/txtexpetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/helveticabold"
+                android:text="@string/myearn"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--Toolbar closed-->
+
+    <LinearLayout
+        android:layout_below="@+id/expetoolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:name="com.example.user.drgamsystech.Fragment.Fragment1"
+            android:id="@+id/fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40">
+
+        </fragment>
+        <fragment
+            android:name="com.example.user.drgamsystech.Fragment.Fragment2"
+            android:id="@+id/fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="60">
+
+        </fragment>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

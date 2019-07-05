@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/accgroup1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/account"
+            android:checked="true"
+            android:title="@string/navmyprofile" />
+        <item android:id="@+id/earning"
+            android:checked="true"
+            android:title="@string/navexearning"/>
+        <item android:id="@+id/emergencyp"
+            android:checked="true"
+            android:title="@string/navemergencypa"/>
+
+    </group>
+
+    <group android:id="@+id/docgrop2"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/refp"
+            android:checked="true"
+            android:title="@string/navreferedpatients"/>
+
+        <item android:id="@+id/nrp"
+            android:checked="true"
+            android:title="T O D A Y'S  R E F E R E D   P A T I E N T S"/>
+
+        <item android:id="@+id/redxuser"
+            android:checked="true"
+            android:title="@string/navredoxerusers"/>
+
+
+        <item android:id="@+id/foolowup"
+            android:checked="true"
+            android:title="@string/navfollowup">
+        </item>
+
+        <item android:id="@+id/logout"
+            android:checked="true"
+            android:title="@string/navlogout"/>
+    </group>
+
+
+</menu>

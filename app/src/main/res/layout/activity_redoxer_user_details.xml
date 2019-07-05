@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RedoxerUserDetails">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/uhutoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <!--  <ImageView
+                  android:id="@+id/imvuh"
+                  android:layout_width="33dp"
+                  android:layout_height="33dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:src="@drawable/gham" />-->
+
+            <TextView
+                android:id="@+id/txtuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rud"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/helveticabold"
+                />
+
+            <!-- <ImageView
+                 android:id="@+id/imgauh"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="@dimen/scale_5dp"
+                 android:layout_marginEnd="7dp"
+                 android:layout_marginRight="7dp"
+                 app:srcCompat="@drawable/right_dot_menu" />-->
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--Toolbar closed-->
+
+
+
+   <!-- <include
+        android:id="@+id/vis1"
+        android:layout_below="@+id/uhutoolbar"
+        layout="@layout/referedpatientsedit1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </include>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrainrud"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/uhutoolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lldor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/scale_20dp">
+
+        <TextView
+            android:id="@+id/txtdor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dor"
+            android:fontFamily="@font/helveticamedium"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/scale_5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtdordate"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/helveticabold"
+                android:gravity="left"
+                android:inputType="date"
+                android:text="22 MAR 2019"
+                android:textColor="@color/yellow"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/dolimgview"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:src="@drawable/pencile512" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lldor">
+
+        <RelativeLayout
+            android:id="@+id/relrefd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/refddicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/person"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/edurefdname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/refddicon"
+                android:layout_toRightOf="@id/refddicon"
+                android:fontFamily="@font/helveticamedium"
+                android:text="Siddharth Bhore"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <!--Email-->
+        <RelativeLayout
+            android:id="@+id/relrefd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/refdeicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/envelope"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/edemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/refdeicon"
+                android:layout_toRightOf="@id/refdeicon"
+                android:text="sbhore301@gmail.com"
+                android:fontFamily="@font/helveticamedium"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <!--Mobile Number-->
+        <RelativeLayout
+            android:id="@+id/relrefd3"
+            android:layout_below="@+id/relrefd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/imgrepdmob1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/mobileicon"
+                android:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_alignBottom="@id/imgrepdmob1"
+                android:layout_toRightOf="@id/imgrepdmob1">
+
+                <TextView
+                    android:id="@+id/edurefdmob1"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:text="9892608968"
+                    />
+
+                <!-- <ImageView
+
+                     android:id="@+id/slash"
+                     android:layout_width="12dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:src="@drawable/slpashmob" />-->
+
+                <TextView
+                    android:id="@+id/edurefdmob2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgrepdmob1"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="9987461317"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--Address 1-->
+        <RelativeLayout
+            android:id="@+id/relrefd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgadd1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/iconhome"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtrepdadd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgadd1"
+                android:layout_toRightOf="@id/imgadd1"
+                android:fontFamily="@font/helveticamedium"
+                android:text="G 455 ,Gully CHS"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <!--Address 2-->
+        <RelativeLayout
+            android:id="@+id/relrefd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd4"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/imgadd2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/iconbuild"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtrepdadd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgadd2"
+                android:layout_toRightOf="@id/imgadd2"
+                android:fontFamily="@font/helveticamedium"
+                android:text="Sector-14 , Andheri"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <!--Address 3-->
+        <RelativeLayout
+            android:id="@+id/relrefd6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd5"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/imgadd3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/bg"
+                android:padding="8dp"
+                android:src="@drawable/iconbuilding"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtrepdadd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgadd3"
+                android:layout_toRightOf="@id/imgadd3"
+                android:fontFamily="@font/helveticamedium"
+                android:text="Mumbai- 410210"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="10dp"
+
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!--BACK BUTTON-->
+        <Button
+            android:id="@+id/btntrackhelath"
+            android:layout_below="@id/relrefd6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="#f8a519"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/scale_10dp"
+            android:layout_marginRight="@dimen/scale_10dp"
+
+            android:fontFamily="@font/helveticamedium"
+            android:text="@string/trackhealth"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btnshow"
+            android:layout_below="@id/btntrackhelath"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="#f8a519"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/scale_10dp"
+            android:layout_marginRight="@dimen/scale_10dp"
+            android:onClick="load"
+            android:fontFamily="@font/helveticamedium"
+            android:text="show"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatdouadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/addplus"
+            app:fabSize="auto"
+            app:maxImageSize="56dp"
+            app:useCompatPadding="true"
+            tools:layout_editor_absoluteX="290dp" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">DRGamsystech</string>
+
+    <!--Login-->
+    <string name="LogIn">LOGIN</string>
+    <string name="Logpass">Password</string>
+    <string name="logusername">Enter Username</string>
+    <string name="logPassword"> Enter Password</string>
+    <string name="logout"> LOGOUT</string>
+    <string name="Signin">Sign in</string>
+    <string name="ForgotPass">Forget Password ?</string>
+
+
+    <!--Earning-->
+
+
+    <string name="Close" />
+    <string name="Open" />
+
+    <!-- Emergency patient-->
+    <string name="emp">EMERGENCY PATIENTS</string>
+    <string name="adduser">ADD USER</string>
+    <string name="loh">LIST OF HIGH BLOOD PRESSURE PATIENT</string>
+
+    <!--ADD user-->
+    <string name="namea">Username</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile No</string>
+    <string name="altmobile">Alternative Mobile No</string>
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="houseno">HOUSE NO / APT NO</string>
+    <string name="landmark">Landmark</string>
+    <string name="street">Street Details</string>
+    <string name="area">Area</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="add">ADD</string>
+
+
+    <!--List of LEADS-->
+    <string name="lol">LIST OF LEADS</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="sru">SEARCH REDOXER USERS</string>
+    <string name="refp">REFERED PATIENTS</string>
+    <string name="NAME">NAME</string>
+    <string name="STATUS">STATUS</string>
+
+    <string name="action_search">Search</string>
+
+    <!--Refered Patients Details-->
+    <string name="rpd">REFERED PATIENTS DETAILS</string>
+    <string name="dor">DATE OF REGISTRATION</string>
+    <string name="name">Name</string>
+    <string name="close">CLOSE</string>
+    <string name="updaterpd">UPDATE</string>
+    <string name="status1">STATUS :</string>
+    <string name="back">BACK</string>
+
+
+    <!--User History-->
+    <string name="uhistory">USER HISTORY</string>
+
+    <!--DETAILS OF USERS-->
+    <string name="dop">PATIENT DETAILS</string>
+    <!--Forget Password-->
+    <string name="forgpass">FORGET PASSWORD</string>
+    <string name="personaldetails">PERSONAL DETAILS</string>
+    <!--Follow UP-->
+    <string name="fou">FOLLOW UP</string>
+    <string name="immidiateat">IMMIDIATE ATTENTION</string>
+    <string name="fud">FOLLOW UP DETAILS</string>
+
+
+    <!--REDOXER USER'S-->
+    <string name="redoxuser">REDOXER USERS</string>
+    <string name="trackhealth">TRACK HEALTH</string>
+    <string name="viewhistory">VIEW MEDICAL HISTORY</string>
+    <string name="rud">REDOXER USERS DETAILS</string>
+    <!--MY PROFILE-->
+    <string name="myprofile">MY PROFILE</string>
+    <string name="edit">EDIT</string>
+    <string name="personald">Personal Details</string>
+    <string name="profdetails">Professional Details</string>
+    <string name="bankdetails">Bank Details</string>
+    <string name="Changepas">Change Password</string>
+    <string name="documentation">Documentation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Change password-->
+    <string name="changepass">CHANGE PASSWORD</string>
+    <string name="oldpass">Enter Old Password</string>
+    <string name="newpass">Enter New Password</string>
+    <string name="confpass">Confirm New Password</string>
+    <string name="update">UPDATE</string>
+    <string name="cpusername">Username : </string>
+
+    <!--UPload Documents-->
+    <string name="doc">DOCUMENTATION</string>
+    <string name="agreement">UPLOAD AGREEMENT</string>
+    <string name="ud1">UPLOAD DOCUMENT 1</string>
+    <string name="ud2">UPLOAD DOCUMENT 2</string>
+    <string name="ud3">UPLOAD DOCUMENT 3</string>
+    <string name="ud4">UPLOAD DOCUMENT 4</string>
+    <string name="upload">UPLOAD </string>
+
+    <!--Expected Earnings-->
+    <string name="myearn">MY EARNINGS</string>
+    <string name="expectede">EXPECTED EARNINGS</string>
+    <string name="DaliyEarning">D A I L Y </string>
+    <string name="WeekEarning">W E E K L Y </string>
+    <string name="MontlyEarning">M O N T H L Y </string>
+    <string name="paid">PAID AMOUNT </string>
+    <string name="unpaid">UNPAID AMOUNT</string>
+    <string name="schemes">SCHEMES</string>
+    <string name="termncondition">TERMS AND CONDITITIONS</string>
+
+    <string name="dailytext">Your daily  amount is displayed here with all other Lakh amounts layers.</string>
+    <string name="weektext">Your Weekly  amount is displayed here with all other Lakh amounts layers.</string>
+    <string name="monthtext">Your Monthly amount is displayed here with all other Lakh amounts layers.</string>
+
+    <!--Menus names-->
+    <string name="navmyprofile">M Y  P R O F I L E</string>
+    <string name="navexearning">E X P E C T E D  E A R N I N G</string>
+    <string name="navemergencypa">E M E R G E N C Y  P A T I E N T S</string>
+    <string name="navreferedpatients">R E F E R E D   P A T I E N T S</string>
+    <string name="navredoxerusers">R E D O X E R   U S E R S</string>
+    <string name="navfollowup">F O L L O W   U P</string>
+    <string name="navlogout">L O G O U T</string>
+
+    <!--Bank Details-->
+    <string name="bankname">Please Enter Bank Name</string>
+    <string name="AccountHolder">Please Enter Account Holder Name</string>
+    <string name="branchname">Please Enter Branch Name</string>
+    <string name="IFSC">Please Enter IFSC Name</string>
+    <string name="customerid">Please Enter Customer ID Name</string>
+</resources>

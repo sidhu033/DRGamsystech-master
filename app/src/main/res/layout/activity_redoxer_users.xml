@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RedoxerUsers">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/rutoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/txtautitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/redoxuser"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/helveticabold"
+                />
+            <ImageView
+                android:id="@+id/imvau"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/serachicon"
+                android:tooltipText="SEARCH "/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+<!--
+    <RelativeLayout
+        android:id="@+id/post_text_layout"
+        android:layout_below="@+id/rutoolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/redoxerusers"></include>
+
+    </RelativeLayout>
+-->
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below= "@id/rutoolbar"
+        android:id="@+id/relredoxeruser">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rurecycleview"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- <include layout="@layout/referedpatients"></include>-->
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imgrueradd"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/addplus"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerInside"
+        app:maxImageSize="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="5dp"
+        app:useCompatPadding="true"
+        app:fabSize="auto"
+        />
+</RelativeLayout>

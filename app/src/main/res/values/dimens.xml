@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="scale_10dp">10dp</dimen>
+    <dimen name="scale_15dp">15dp</dimen>
+    <dimen name="scale_18dp">18dp</dimen>
+    <dimen name="scale_20dp">20dp</dimen>
+    <dimen name="scale_25dp">25dp</dimen>
+
+    <dimen name="scale_30dp">30dp</dimen>
+    <dimen name="scale_35dp">35dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="design_fab_image_size" override="true">56dp</dimen>
+    <dimen name="scale_5dp">5dp</dimen>
+
+
+    <!--textsized-->
+
+
+</resources>

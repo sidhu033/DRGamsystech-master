@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ReferedPatientsDetail">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/refdtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- <ImageView
+                 android:id="@+id/dolimgview"
+                 android:layout_width="33dp"
+                 android:layout_height="33dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/newlogo" />-->
+
+            <TextView
+                android:id="@+id/loltooltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/helveticamedium"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:text="@string/rpd"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <!--<TextView
+                android:id="@+id/dogIvcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFFFFF"
+                android:text="NEXT"
+                android:fontFamily="@font/helveticamedium"
+                android:textSize="20sp"
+                android:singleLine="true"
+                />-->
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--toolbar closed-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refdtoolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <include
+                android:id="@+id/vis1"
+                layout="@layout/referedpatientsedit1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+            </include>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

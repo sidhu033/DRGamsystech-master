@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/llcpaid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle2">
+
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:layout_marginTop="70sp"
+            android:fontFamily="@font/helveticamedium"
+            android:gravity="center"
+            android:text="5 6"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtImgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llcpaid1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-12dp"
+        android:fontFamily="@font/helveticalight"
+        android:gravity="center|bottom"
+        android:singleLine="true"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+
+
+
+
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llcpaid1"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle2"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:layout_marginRight="23sp"
+                    android:layout_marginLeft="23sp"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/scale_20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/llcpaid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/helveticamedium"
+                android:text="@string/paid"
+                android:textSize="@dimen/scale_20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/scale_5dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/llcunpaid2"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:layout_marginRight="23sp"
+                    android:layout_marginLeft="23sp"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/scale_20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/llcunpaid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/helveticamedium"
+                android:gravity="center"
+                android:text="@string/unpaid"
+                android:textSize="@dimen/scale_20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <!--Botton buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="@dimen/scale_5dp">
+
+        <Button
+            android:id="@+id/btnscheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="#f8a519"
+            android:fontFamily="@font/helveticamedium"
+            android:text="@string/schemes"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

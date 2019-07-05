@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgetPass">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/forgtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp">
+
+
+            <ImageView
+                android:id="@+id/forgimgview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/newlogo" />
+
+            <TextView
+                android:id="@+id/forgtooltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/helveticamedium"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:text="@string/forgpass"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.constraint.ConstraintLayout>

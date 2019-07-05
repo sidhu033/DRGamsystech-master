@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/refdtoolbar"
+    tools:context=".activity.ReferedPatientsDetail"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/loltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                 android:id="@+id/imvep"
+                 android:layout_width="33dp"
+                 android:layout_height="33dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/gham" />
+
+            <TextView
+                android:id="@+id/txtempatitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/refp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/helveticabold"
+                />
+
+            <!--<ImageView
+                android:id="@+id/imgemprm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                app:srcCompat="@drawable/right_dot_menu" />-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/llrefdname"
+        android:layout_below="@+id/loltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/refdicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/person"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edurefdname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/refdicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/refdicon"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--Email-->
+    <RelativeLayout
+        android:id="@+id/llrepdemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrefdname"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/refpenvlop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/envelope"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edrepdemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/refpenvlop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/refpenvlop"
+            android:background="@color/gray"
+            android:hint="@string/email"
+            android:fontFamily="@font/helveticamedium"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--Mobile Number-->
+    <RelativeLayout
+        android:id="@+id/llrepdmob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrepdemail"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/repdmobile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/mobileicon"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edumobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/repdmobile"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/repdmobile"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/mobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!-- ALTERNATIVE Mobile Number-->
+    <RelativeLayout
+        android:id="@+id/llrepdaltmob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrepdmob"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgrpdam"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/mobileicon"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edurepdam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgrpdam"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/helveticamedium"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgrpdam"
+            android:background="@color/gray"
+            android:hint="@string/altmobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrepdPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrepdaltmob"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgrepdpin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/location"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edurepdpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgrepdpin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgrepdpin"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/pincode"
+            android:inputType="number"
+            android:ems="6"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--Landmark-->
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrepdhouseno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrepdPin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imghouseno"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/iconhome"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/eduhouseno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imghouseno"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imghouseno"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/houseno"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrelstreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrepdhouseno"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgstreet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/iconhome"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edustreet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgstreet"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgstreet"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/street"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrelArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrelstreet"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgarea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/iconhome"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/eduarea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgarea"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgarea"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/area"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrelcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrelArea"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgcity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/iconhome"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/educity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgcity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgcity"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/city"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <!--Address-->
+    <RelativeLayout
+        android:id="@+id/llrelstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrelcity"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imgstate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/bg"
+            android:padding="8dp"
+            android:src="@drawable/iconhome"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edustate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imgstate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imgstate"
+            android:background="@color/gray"
+            android:fontFamily="@font/helveticamedium"
+            android:hint="@string/state"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <!--ADD-->
+
+    <Button
+        android:id="@+id/btnrepdupd"
+        android:layout_width="match_parent"
+        android:layout_below="@id/llrelstate"
+        android:layout_height="50dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#f8a519"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/scale_10dp"
+        android:layout_marginRight="@dimen/scale_10dp"
+        android:fontFamily="@font/helveticamedium"
+        android:text="@string/updaterpd"
+        android:textColor="@color/black" />
+</RelativeLayout>

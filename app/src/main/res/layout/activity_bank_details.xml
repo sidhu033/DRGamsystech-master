@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BankDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/bankdetails"
+                android:fontFamily="@font/helveticabold"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+
+            <!--DR Name-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark_blue">
+
+                <EditText
+                    android:id="@+id/clname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bankname"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark_blue">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/AccountHolder"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|date"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark_blue">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/branchname"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark_blue">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/IFSC"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete|textEmailAddress"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark_blue">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/customerid"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+                    android:textColorHint="@color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnprfback"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/scale_10dp"
+                android:layout_marginRight="@dimen/scale_10dp"
+                android:fontFamily="@font/helveticamedium"
+                android:text="@string/back"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

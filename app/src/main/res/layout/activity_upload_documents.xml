@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UploadDocuments">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/udtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txmyprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/doc"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/helveticabold"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--Agreements-->
+    <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@+id/udtoolbar"
+             android:orientation="vertical">
+
+         <fragment
+             android:name="com.example.user.drgamsystech.Fragment.UploadDocfragment"
+             android:id="@+id/lm_fragment"
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+
+     </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/udtoolbar"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement"
+                android:textSize="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticamedium"
+                />
+
+            <Button
+                android:id="@+id/btnulag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:layout_marginLeft="30dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/visibilityon" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c/drawblae/new"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ud1"
+                android:textSize="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticamedium"
+                />
+
+            <Button
+                android:id="@+id/btnuldoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:layout_marginLeft="30dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/visibilityon" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uploaded documents"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ud2"
+                android:textSize="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticamedium"
+                />
+
+            <Button
+
+                android:id="@+id/btnuldoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:layout_marginLeft="30dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/visibilityon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uploaded documents"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ud3"
+                android:textSize="@dimen/scale_20dp"
+                android:fontFamily="@font/helveticamedium"
+                />
+
+            <Button
+
+                android:id="@+id/btnuldoc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:layout_marginLeft="30dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/visibilityon" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uploaded documents"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

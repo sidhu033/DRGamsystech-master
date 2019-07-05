@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                 <!--
+                items for a single redoxerusers of RecyclerView
+                -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_viewredoxer"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_margin="@dimen/scale_10dp"
+        android:layout_marginTop="@dimen/scale_5dp"
+        android:elevation="@dimen/scale_10dp"
+
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        cardElevation="@dimen/scale_10dp">
+
+        <RelativeLayout
+            android:id="@+id/relrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llrowname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:weightSum="4">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgruprofile"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scale_5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/profile" />
+
+
+                <TextView
+                    android:id="@+id/redoxuname"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/imgruprofile"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/scale_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="left"
+                    android:text="Siddharth Bhore"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/redoxuage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/redoxuname"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:text="46"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/redoxuslash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/redoxuage"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/helveticamedium"
+                    android:text=" / "
+                    android:textColor="@color/yellow"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/redoxugender"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/redoxuslash"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

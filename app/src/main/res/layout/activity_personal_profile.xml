@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PersonalProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/personptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp">
+
+
+            <ImageView
+                android:id="@+id/perfimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/newlogo" />
+
+            <TextView
+                android:id="@+id/perftitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/helveticamedium"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:text="@string/personaldetails"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/call2" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llpp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        android:layout_below="@+id/personptoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" 22 March 2019"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/yellow"
+                />
+
+            <TextView
+                android:id="@+id/regidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="REGISTRATION DATE"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/dolimgview"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/penciledit2" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgmyrofile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Snehal Shaddy"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5sp"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llpp1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/relrefd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/refddicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/edurefdname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/refddicon"
+                android:layout_toRightOf="@id/refddicon"
+                android:fontFamily="@font/helveticamedium"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:text="Siddharth Bhore"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <!--Email-->
+        <RelativeLayout
+            android:id="@+id/relrefd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/refdeicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/call2"
+                />
+
+            <TextView
+                android:id="@+id/edmob1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/refdeicon"
+                android:layout_toRightOf="@id/refdeicon"
+                android:fontFamily="@font/helveticamedium"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:text="9892608968"
+                android:textSize="18sp" />
+
+
+
+
+            <ImageView
+                android:id="@+id/refdeicon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="166dp"
+                android:layout_toRightOf="@id/edmob1"
+                android:fontFamily="@font/helveticamedium"
+                android:padding="8dp"
+                android:src="@drawable/call" />
+
+
+        </RelativeLayout>
+
+
+        <!--Address 3-->
+        <RelativeLayout
+            android:id="@+id/relrefd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relrefd2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/imgadd3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/txtrepdadd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgadd3"
+                android:layout_toRightOf="@id/imgadd3"
+                android:fontFamily="@font/helveticamedium"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:text="F-01, MAHAPE , ADHIRAJ GARDANS"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!--Status-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/relrefd3"
+            android:layout_gravity="bottom|end">
+            <!--BACK BUTTON-->
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/scale_10dp"
+                android:layout_marginRight="@dimen/scale_10dp"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:backgroundTint="#f8a519"
+                android:fontFamily="@font/helveticamedium"
+                android:text="@string/back"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

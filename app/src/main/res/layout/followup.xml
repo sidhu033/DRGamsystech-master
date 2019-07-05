@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardfolpatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardElevation="@dimen/fab_margin"
+        android:layout_margin="@dimen/scale_10dp"
+        android:layout_marginTop="@dimen/scale_10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="@dimen/scale_10dp"
+        android:padding="@dimen/scale_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id = "@+id/llfudate"
+                android:layout_below="@+id/loltoolbar"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop="@dimen/scale_5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtfudate"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="11 Mar 2019"
+                    android:textColor="@color/yellow"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtfustatus"
+                    android:layout_width="274dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="54sp"
+                    android:fontFamily="@font/helveticalight"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="@string/STATUS"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <!-- name and status actual-->
+            <LinearLayout
+                android:id = "@+id/lldandstatusac"
+                android:layout_below="@+id/llfudate"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginBottom="@dimen/scale_5dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txtfuname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="SIDDHARTH BHORE"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtfustatus2"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="left"
+                    android:layout_marginLeft="20sp"
+                    android:padding="5dp"
+                    android:text="Delivery Scheduled"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:src="@drawable/call" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

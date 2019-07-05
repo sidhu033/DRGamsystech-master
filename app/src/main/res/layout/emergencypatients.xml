@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Toolbar closed-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardemergency"
+        android:layout_below="@+id/eptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="@dimen/scale_20dp"
+        app:cardMaxElevation="@dimen/scale_20dp"
+        apcardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/scale_20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <!--Date and Time-->
+            <LinearLayout
+                android:id="@+id/llepdnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/epdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11 Mar 2019"
+                    android:gravity="left"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="15sp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/eptime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="35sp"
+                    android:text="6 PM"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!--Name-->
+            <LinearLayout
+                android:id="@+id/llepname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/llepdnt"
+                android:layout_marginTop="@dimen/scale_10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/epname"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticamedium"
+                    android:gravity="left"
+                    android:text="Siddharth Bhore"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/epage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="46"
+                    android:gravity="right"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    />
+                <TextView
+                    android:id="@+id/epgender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M"
+                    android:gravity="left"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <!--sys dia pulse-->
+            <LinearLayout
+                android:id="@+id/llepsdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/llepname"
+                android:layout_marginTop="@dimen/scale_5dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="246dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticalight"
+                    android:gravity="center"
+                    android:text="SYS mmHg"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticalight"
+                    android:gravity="center"
+                    android:text="DIA mmHg"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticalight"
+                    android:gravity="center"
+                    android:layout_marginRight="90dp"
+                    android:text="PULSE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--sys dia pulse Actual Reading-->
+            <LinearLayout
+                android:id="@+id/llepsdp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/llepsdp"
+                android:layout_centerInParent="true"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/epsys"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="140"
+                    android:gravity="center"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="18sp"
+                    android:textColor="@color/red"
+                    />
+                <TextView
+                    android:id="@+id/epdia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="84"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/eppulse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="100"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textSize="18sp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/call"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
