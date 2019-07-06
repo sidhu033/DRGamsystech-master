@@ -64,12 +64,15 @@ public class Login extends AppCompatActivity
     //custom class of util
 
     AlertDailogManager  alert = new AlertDailogManager();       //alert dialog class
-    SessionManager session;         //session manager class
+    SessionManager session;                                     //session manager class
     String uname,upass;
     Context logincontext;
-    int PERMISSION_ALL = 1;
-    String[] PERMISSIONS = {Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_SMS, Manifest.permission.CAMERA};
 
+
+    private void createObj()
+    {
+        logincontext = getApplicationContext();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -116,10 +119,7 @@ public class Login extends AppCompatActivity
     }
 
 
-    private void createObj()
-    {
-        logincontext = getApplicationContext();
-    }
+
     /*onclick listner*/
     private void onclicklistner() {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
@@ -212,11 +212,10 @@ public class Login extends AppCompatActivity
         }
         else
         {
-            if(Utils.checkBTPermissions(getApplicationContext()))
-            {
+
                 Utils.showToastMsg(getApplicationContext(),"internet not connected");
-                // ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
-            }
+
+
 
         }
     }

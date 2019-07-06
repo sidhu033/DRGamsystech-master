@@ -47,7 +47,7 @@ public class MyProfile extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_profile);
+        setContentView(R.layout.activity_my_profilenew);
 
         /*Intilization*/
 

@@ -13,15 +13,14 @@
         android:layout_below="@+id/eptoolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardElevation="@dimen/scale_20dp"
-        app:cardMaxElevation="@dimen/scale_20dp"
+        android:layout_margin="@dimen/scale_10dp"
+        app:cardElevation="@dimen/scale_5dp"
         apcardUseCompatPadding="true"
-        app:cardCornerRadius="@dimen/scale_20dp">
+        app:cardCornerRadius="@dimen/scale_10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
            >
             <!--Date and Time-->
             <LinearLayout
@@ -29,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:padding="3dp"
                 android:weightSum="2">
 
                 <TextView
@@ -37,8 +37,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="11 Mar 2019"
+                    android:layout_marginLeft="@dimen/scale_5dp"
                     android:gravity="left"
-                    android:fontFamily="@font/helveticabold"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="15sp"
                     android:textColor="@color/yellow"
                     android:textStyle="bold"/>
@@ -50,7 +51,7 @@
                     android:gravity="right"
                     android:layout_marginRight="35sp"
                     android:text="6 PM"
-                    android:fontFamily="@font/helveticamedium"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="15sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -62,36 +63,41 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_below="@+id/llepdnt"
+                android:padding="3dp"
                 android:layout_marginTop="@dimen/scale_10dp"
                 android:weightSum="3">
 
                 <TextView
                     android:id="@+id/epname"
-                    android:layout_width="192dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/helveticamedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/metropolismedium"
                     android:gravity="left"
+
                     android:text="Siddharth Bhore"
+                    android:singleLine="true"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                     />
 
                 <TextView
                     android:id="@+id/epage"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="46"
+                    android:text="4 6"
+
                     android:gravity="right"
                     android:fontFamily="@font/helveticamedium"
                     android:textSize="15sp"
+
                     android:textStyle="bold"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" / "
-                    android:fontFamily="@font/helveticamedium"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/yellow"
@@ -103,7 +109,8 @@
                     android:layout_weight="1"
                     android:text="M"
                     android:gravity="left"
-                    android:fontFamily="@font/helveticamedium"
+                    android:layout_marginLeft="@dimen/scale_5dp"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     />
@@ -122,7 +129,7 @@
                     android:layout_width="246dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/helveticalight"
+                    android:fontFamily="@font/metropolismedium"
                     android:gravity="center"
                     android:text="SYS mmHg"
                     android:textSize="10sp"
@@ -132,7 +139,7 @@
                     android:layout_width="259dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/helveticalight"
+                    android:fontFamily="@font/metropolismedium"
                     android:gravity="center"
                     android:text="DIA mmHg"
                     android:textSize="10sp"
@@ -142,7 +149,7 @@
                     android:layout_width="222dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/helveticalight"
+                    android:fontFamily="@font/metropolismedium"
                     android:gravity="center"
                     android:layout_marginRight="90dp"
                     android:text="PULSE"
@@ -167,7 +174,7 @@
                     android:layout_weight="1"
                     android:text="140"
                     android:gravity="center"
-                    android:fontFamily="@font/helveticamedium"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="18sp"
                     android:textColor="@color/red"
                     />
@@ -178,7 +185,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="84"
-                    android:fontFamily="@font/helveticamedium"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/red"
@@ -191,7 +198,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="100"
-                    android:fontFamily="@font/helveticamedium"
+                    android:fontFamily="@font/metropolismedium"
                     android:textSize="18sp"
                     android:textColor="@color/red"
                     android:textStyle="bold"/>
@@ -200,6 +207,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/call"
+                    android:padding="2dp"
                     android:layout_weight="1"
                     android:layout_gravity="right"
                     />

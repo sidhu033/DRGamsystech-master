@@ -40,7 +40,7 @@ public class Utils
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-
+    //check BT Permission for app
     public static boolean checkBTPermissions(Context context)
     {
 

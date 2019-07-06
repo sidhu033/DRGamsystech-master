@@ -11,7 +11,7 @@ public class PersonalProfile extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-      /*  setContentView(R.layout.activity_personal_profile);*/
-        setContentView(R.layout.activity_my_profilenew);
+       setContentView(R.layout.activity_personal_profile);
+     /*   setContentView(R.layout.activity_my_profilenew);*/
     }
 }

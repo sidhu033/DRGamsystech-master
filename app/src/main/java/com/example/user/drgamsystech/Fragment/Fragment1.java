@@ -25,7 +25,7 @@ public class Fragment1 extends Fragment
     {
             //inflate the layout for this fragment
 
-        return inflater.inflate(R.layout.fragment_dwmearn,container,false);
+        return inflater.inflate(R.layout.fragment_dwmearn2,container,false);
 
 
     }

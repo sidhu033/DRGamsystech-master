@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Expected Earnings-->
+    <LinearLayout
+        android:id="@+id/expectearn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtexpearning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/expectede"
+            android:fontFamily="@font/metropolisregular"
+            android:textColor="@color/yellow"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/scale_20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+</FrameLayout>
