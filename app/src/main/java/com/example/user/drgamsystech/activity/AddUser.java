@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.example.user.drgamsystech.R;
 import com.example.user.drgamsystech.databasehelper.DatabaseHelper;
 import com.example.user.drgamsystech.pojo.User;
+import com.example.user.drgamsystech.utils.Utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -26,36 +27,36 @@ import java.io.IOException;
 
 public class AddUser extends AppCompatActivity {
     Button btnad;
-    EditText eduname, edemail, edumobile, edualtmob, edupincode, eduhouseno,edustreet,eduarea,educity,edustate;
+    EditText eduname, eduemail, edumob1, edumob2, edupincode, eduhouseno,edustreet,eduarea,educity,edustate;
     Toolbar adutoolbar;
     User user;
 
     String uname ,uemail, umobile,ualmobile,upincode,uhouseno,ustreet,uarea,ucity,ustate;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_user);
+        setContentView(R.layout.activity_add_user2);
 
         /*Initilization*/
 
         initilization();
-        //onclicklistner();
+        onclicklistner();
 
 
 
 
     }
-//close user
-
+    //close user
     private void initilization()
     {
 
         btnad = findViewById(R.id.btnad);
         eduname = findViewById(R.id.eduname);
-        edemail = findViewById(R.id.edemail);
-        edumobile = findViewById(R.id.edumobile);
-        edualtmob = findViewById(R.id.edualtmob);
+        eduemail = findViewById(R.id.eduemail);
+        edumob1 = findViewById(R.id.edumob1);
+        edumob2 = findViewById(R.id.edumob2);
         edupincode = findViewById(R.id.edupincode);
         eduhouseno = findViewById(R.id.eduhouseno);
         eduarea = findViewById(R.id.eduarea);
@@ -79,7 +80,9 @@ public class AddUser extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-              //  adduserdatabase();
+                adduserdatabase();
+                startActivity(new Intent(AddUser.this,ReferedPatients.class));
+                finish();
             }
         });
     }
@@ -95,7 +98,8 @@ public class AddUser extends AppCompatActivity {
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         int id = item.getItemId();
         switch (id) {
             case R.id.Help:
@@ -111,14 +115,15 @@ public class AddUser extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
     //save to internal storage
     public void save(View view) throws IOException
     {
         File file = null;
         uname  =eduname.getText().toString();
-        uemail =edemail.getText().toString();
-        umobile =edumobile.getText().toString();
-        ualmobile= edualtmob.getText().toString();
+        uemail =eduemail.getText().toString();
+        umobile =edumob1.getText().toString();
+        ualmobile= edumob2.getText().toString();
         upincode = edupincode.getText().toString();
         uhouseno = eduhouseno.getText().toString();
         uarea = eduarea.getText().toString();
@@ -175,6 +180,8 @@ public class AddUser extends AppCompatActivity {
     {
         DatabaseHelper dbUser = new DatabaseHelper(getApplicationContext());
         dbUser.addUser(user);
-        Toast.makeText(this, "User Added Suceessfully", Toast.LENGTH_LONG).show();
+        Utils.showToastMsg(this,"User Added Sucessfully");
+
+        //  Toast.makeText(this, "User Added Suceessfully", Toast.LENGTH_LONG).show();
     }
 }

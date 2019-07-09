@@ -1,122 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.BankDetails">
-    <ScrollView
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/addbankdtoolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="50dp"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imvau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gham" />
 
             <TextView
+                android:id="@+id/txtautitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/bankdetails1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/metropolismedium"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/scale_5dp"
+        android:layout_below="@+id/addbankdtoolbar">
+
+        <!--Bank Name-->
+        <RelativeLayout
+            android:id="@+id/llrelbname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconmen" />
+
+            <EditText
+                android:id="@+id/eduname"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/bankdetails"
-                android:fontFamily="@font/helveticabold"
-                android:textSize="30sp"
-                android:textAlignment="center"/>
+                android:layout_alignBottom="@id/userIcon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/userIcon"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/bankname"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
 
-            <!--DR Name-->
-            <android.support.design.widget.TextInputLayout
+        <!--Account Holder Name-->
+        <RelativeLayout
+            android:id="@+id/llrelbholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/llrelbname"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconholder"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconmen" />
+
+            <EditText
+                android:id="@+id/eduholder"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/dark_blue">
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconholder"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconholder"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/AccountHolder"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
 
-                <EditText
-                    android:id="@+id/clname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/bankname"
-                    android:imeOptions="actionNext"
-                    android:textColorHint="@color/black" />
+        <!--Account Holder Name-->
+        <RelativeLayout
+            android:id="@+id/llrelbbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/llrelbholder"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
 
-            </android.support.design.widget.TextInputLayout>
+            <ImageView
+                android:id="@+id/iconbranch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconmen" />
 
-
-
-            <android.support.design.widget.TextInputLayout
+            <EditText
+                android:id="@+id/edubranch"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/dark_blue">
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconbranch"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconbranch"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/branchname"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/AccountHolder"
-                    android:imeOptions="actionNext"
-                    android:inputType="text|date"
-                    android:textColorHint="@color/black" />
 
-            </android.support.design.widget.TextInputLayout>
+        <!--Account Holder Name-->
+        <RelativeLayout
+            android:id="@+id/llrelbifsccode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/llrelbbranch"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
 
-            <android.support.design.widget.TextInputLayout
+            <ImageView
+                android:id="@+id/iconifsc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconmen" />
+
+            <EditText
+                android:id="@+id/eduifsc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/dark_blue">
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconifsc"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconifsc"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/IFSC"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/branchname"
-                    android:imeOptions="actionNext"
-                    android:inputType="textAutoComplete"
-                    android:textColorHint="@color/black" />
 
-            </android.support.design.widget.TextInputLayout>
+        <!--Customer ID Holder Name-->
+        <RelativeLayout
+            android:id="@+id/llrelbcid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/llrelbifsccode"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
 
-            <android.support.design.widget.TextInputLayout
+            <ImageView
+                android:id="@+id/iconcid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconmen" />
+
+            <EditText
+                android:id="@+id/educustomerid"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/dark_blue">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/IFSC"
-                    android:imeOptions="actionNext"
-                    android:inputType="textAutoComplete|textEmailAddress"
-                    android:textColorHint="@color/black" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/dark_blue">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/customerid"
-                    android:imeOptions="actionNext"
-                    android:inputType="textAutoComplete"
-                    android:textColorHint="@color/black" />
-
-            </android.support.design.widget.TextInputLayout>
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconcid"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconcid"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/IFSC"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
 
 
-            <Button
-                android:id="@+id/btnprfback"
-                android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnaddbank"
+            android:layout_width="match_parent"
+            android:layout_below="@id/llrelbcid"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="#f8a519"
+            android:fontFamily="@font/metropolismedium"
+            android:text="@string/add"
+            android:textColor="@color/black" />
 
-                android:layout_height="50dp"
-                android:background="@android:drawable/dialog_holo_light_frame"
-                android:backgroundTint="#f8a519"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="@dimen/scale_10dp"
-                android:layout_marginRight="@dimen/scale_10dp"
-                android:fontFamily="@font/helveticamedium"
-                android:text="@string/back"
-                android:textColor="@color/black" />
-        </LinearLayout>
-    </ScrollView>
-</android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

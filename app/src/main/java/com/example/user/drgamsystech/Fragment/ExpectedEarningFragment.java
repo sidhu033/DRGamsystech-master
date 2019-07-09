@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.user.drgamsystech.R;
 
-public class Fragment1 extends Fragment
+public class ExpectedEarningFragment extends Fragment
 {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState)
@@ -29,6 +29,7 @@ public class Fragment1 extends Fragment
 
 
     }
+
 
 
 }

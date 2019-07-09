@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity
     {
         txtforgpass = findViewById(R.id.txtforgpass);
         btnSignIn = findViewById(R.id.btnSignIn);
-        loginprogress = findViewById(R.id.loginprogress);
+        //loginprogress = findViewById(R.id.loginprogress);
         loguname = findViewById(R.id.loguname);
         edulogpass = findViewById(R.id.edulogpass);
         imgpassiconnon = findViewById(R.id.imgpassiconnon);
@@ -328,6 +328,8 @@ public class Login extends AppCompatActivity
         {
            textView.setText("current weather"+values);
             super.onProgressUpdate(values);
+            loginprogress.setVisibility(View.VISIBLE);
+
         }
     }
 }

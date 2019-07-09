@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddUser">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adutoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imvau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/gham" />
+
+            <TextView
+                android:id="@+id/txtautitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/addpatient"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/metropolismedium"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--toolbar closed-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/scale_5dp"
+        android:layout_below="@+id/adutoolbar">
+
+        <!--Name-->
+        <RelativeLayout
+            android:id="@+id/llrelname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="7dp"
+                android:src="@drawable/iconmen" />
+
+            <EditText
+                android:id="@+id/eduname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/userIcon"
+                android:layout_toRightOf="@id/userIcon"
+                android:background="@null"
+                android:paddingLeft="10sp"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/namenew"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <!--Email-->
+        <RelativeLayout
+            android:id="@+id/llrelemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelname"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconemail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/iconbank" />
+
+            <EditText
+                android:id="@+id/eduemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconemail"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/iconemail"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+
+
+        <!--Mobile Number-->
+        <RelativeLayout
+            android:id="@+id/llrelmob1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelemail"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconmob1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/edumob1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconmob1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/iconmob1"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/mobile"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <!--Mobile Number-->
+        <RelativeLayout
+            android:id="@+id/llrelmob2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelmob1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconmob2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/edumob2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconmob2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/iconmob2"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/altmobile"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <!-- Pincode -->
+        <RelativeLayout
+            android:id="@+id/llrelpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelmob2"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconpin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/edupincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconpin"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/iconpin"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/pincode"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <!-- HOuse NO / APT No -->
+        <RelativeLayout
+            android:id="@+id/llrelhouseno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelpin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconhouse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/eduhouseno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconhouse"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconhouse"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/houseno"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- Street Details -->
+        <RelativeLayout
+            android:id="@+id/llrelstreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelhouseno"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconstreet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/edustreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconstreet"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_toRightOf="@id/iconstreet"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/street"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- Area Details -->
+        <RelativeLayout
+            android:id="@+id/llrelarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelstreet"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconarea"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/eduarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconarea"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconarea"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/area"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- City Details -->
+        <RelativeLayout
+            android:id="@+id/llrelcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelarea"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconcity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/educity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconcity"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconcity"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- state Details -->
+        <RelativeLayout
+            android:id="@+id/llrelstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/llrelcity"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/textboxcolor">
+
+            <ImageView
+                android:id="@+id/iconstate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/icontie" />
+
+            <EditText
+                android:id="@+id/edustate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconstate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/iconstate"
+                android:fontFamily="@font/metropolismedium"
+                android:hint="@string/state"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/btnad"
+                android:layout_width="match_parent"
+                android:layout_below="@id/llrelstate"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"
+
+
+
+
+                android:layout_marginLeft="@dimen/scale_10dp"
+                android:layout_marginRight="@dimen/scale_10dp"
+                android:onClick="save"
+                android:fontFamily="@font/helveticamedium"
+                android:text="@string/add"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

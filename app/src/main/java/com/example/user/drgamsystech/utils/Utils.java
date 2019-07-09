@@ -1,16 +1,27 @@
 package com.example.user.drgamsystech.utils;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.Pair;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.user.drgamsystech.R;
+import com.example.user.drgamsystech.activity.ReferedPatients;
+
 import java.util.UUID;
+import java.util.regex.Pattern;
 
 public class Utils
 {
@@ -142,5 +153,9 @@ public class Utils
         Log.d(TAG, "In isStringNull()---4th");
         return isValide;
     }
+
+    /*gloabal method for */
+
+
 
 }

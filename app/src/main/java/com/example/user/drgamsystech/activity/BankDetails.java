@@ -10,7 +10,7 @@ public class BankDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bank_details);
+        setContentView(R.layout.activity_bank_details2);
 
     }
 }

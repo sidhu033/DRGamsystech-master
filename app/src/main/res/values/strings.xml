@@ -20,16 +20,18 @@
     <!-- Emergency patient-->
     <string name="emp">EMERGENCY PATIENTS</string>
     <string name="adduser">ADD USER</string>
+    <string name="addpatient">ADD PATIENT</string>
     <string name="loh">LIST OF HIGH BLOOD PRESSURE PATIENT</string>
 
     <!--ADD user-->
     <string name="namea">Username</string>
+    <string name="namenew">Name</string>
     <string name="email">Email</string>
     <string name="mobile">Mobile No</string>
     <string name="altmobile">Alternative Mobile No</string>
     <string name="address">Address</string>
     <string name="pincode">Pincode</string>
-    <string name="houseno">HOUSE NO / APT NO</string>
+    <string name="houseno">House No / Apt No</string>
     <string name="landmark">Landmark</string>
     <string name="street">Street Details</string>
     <string name="area">Area</string>
@@ -59,6 +61,7 @@
     <string name="back">BACK</string>
 
 
+
     <!--User History-->
     <string name="uhistory">USER HISTORY</string>
 
@@ -82,6 +85,7 @@
     <string name="myprofile">MY PROFILE</string>
     <string name="edit">EDIT</string>
     <string name="personald">Personal Details</string>
+
     <string name="profdetails">Professional Details</string>
     <string name="bankdetails">Bank Details</string>
     <string name="Changepas">Change Password</string>
@@ -131,9 +135,18 @@
     <string name="navlogout">L O G O U T</string>
 
     <!--Bank Details-->
+    <string name="bankdetails1">ADD BANK DETAILS</string>
+    <string name="bankdetailsshow">Bank Details</string>
     <string name="bankname">Please Enter Bank Name</string>
     <string name="AccountHolder">Please Enter Account Holder Name</string>
     <string name="branchname">Please Enter Branch Name</string>
     <string name="IFSC">Please Enter IFSC Name</string>
     <string name="customerid">Please Enter Customer ID Name</string>
+
+
+    <!--Professional Details-->
+    <string name="professionaldetails">PROFESSIONAL DETAILS</string>
+    <string name="enterclinic">Please Enter Clinic Name</string>
+    <string name="entername">Please Enter Name</string>
+    <string name="yop">Please Enter Year Of Practice Start</string>
 </resources>

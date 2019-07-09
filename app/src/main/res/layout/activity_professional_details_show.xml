@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.PersonalProfile">
+    android:orientation="vertical">
+
+    <!--professional details-->
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/personptoolbar"
+        android:id="@+id/profptoolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -38,7 +38,7 @@
                 android:fontFamily="@font/helveticamedium"
                 android:textAlignment="center"
                 android:singleLine="true"
-                android:text="@string/personaldetails"
+                android:text="@string/professionaldetails"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -52,110 +52,87 @@
 
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
-
-    <!--personal registration-->
-    <LinearLayout
-        android:id="@+id/llpp1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/bg"
-        android:orientation="vertical"
-        android:layout_below="@+id/personptoolbar">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:weightSum="2">
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=" 22 March 2019"
-                android:textStyle="bold"
-                android:fontFamily="@font/metropolismedium"
-
-                android:textSize="15sp"
-                android:textColor="@color/yellow"
-                />
-
-            <TextView
-                android:id="@+id/regidate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="REGISTRATION DATE"
-                android:fontFamily="@font/metropolismedium"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                />
-
-        </LinearLayout>
-
-            <ImageView
-                android:id="@+id/dolimgview"
-                android:layout_width="wrap_content"
-                android:layout_height="30sp"
-                android:layout_weight="1"
-                android:layout_gravity="end"
-                android:src="@drawable/pencile512" />
-
-        </LinearLayout>
-
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgmyrofile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/profile" />
-
-        <TextView
-            android:id="@+id/txtname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Snehal Shaddy"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:fontFamily="@font/metropolismedium"
-            android:textSize="17sp"
-            android:layout_marginTop="10sp"
-            android:textColor="@color/white"
-            android:layout_marginBottom="10sp"
-            />
-
-
-    </LinearLayout>
+    <!--toolbar closed-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/llpp1"
+        android:layout_below="@+id/profptoolbar"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
         android:baselineAligned="false">
 
+
+        <LinearLayout
+            android:id="@+id/lldoreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/scale_20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dor"
+                android:fontFamily="@font/metropolismedium"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/scale_5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txtdordate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:fontFamily="@font/metropolismedium"
+                    android:gravity="left"
+                    android:inputType="date"
+                    android:text="22 MAR 2019"
+                    android:textColor="@color/yellow"
+
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dolimgview"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/pencile512" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lldoreg"
+        android:orientation="vertical">
+
+        <!-- clinic name-->
         <RelativeLayout
-            android:id="@+id/relrefd1"
+            android:id="@+id/relprofclinic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
+
+            android:layout_marginTop="10dp"
             android:layout_marginRight="15dp">
 
             <ImageView
-                android:id="@+id/refddicon"
+                android:id="@+id/pdicon1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
@@ -163,122 +140,127 @@
                 />
 
             <TextView
-                android:id="@+id/edurefdname"
+                android:id="@+id/txtpd1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/refddicon"
-                android:layout_toRightOf="@id/refddicon"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/pdicon1"
+                android:layout_toRightOf="@id/pdicon1"
                 android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
                 android:paddingLeft="20dp"
                 android:singleLine="true"
-                android:paddingBottom="10dp"
+                android:text="Shaddy Clinic"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- Enter name-->
+        <RelativeLayout
+            android:id="@+id/relprofname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relprofclinic"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/pdicon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtpd2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/pdicon2"
+                android:layout_toRightOf="@id/pdicon2"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="Kabir Singh"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!--  year of practice start-->
+        <RelativeLayout
+            android:id="@+id/relprofyop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relprofname"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/pdicon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtpd3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/pdicon3"
+                android:layout_toRightOf="@id/pdicon3"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="20"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- email id-->
+        <RelativeLayout
+            android:id="@+id/relprofemailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relprofyop"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/pdicon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtpd4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/pdicon4"
+                android:layout_toRightOf="@id/pdicon4"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
                 android:text="sbhore301@gmail.com"
                 android:textSize="15sp" />
         </RelativeLayout>
 
-
-        <!--Email-->
-        <RelativeLayout
-            android:id="@+id/relrefd2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/relrefd1"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp">
-
-            <ImageView
-                android:id="@+id/refdeicon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/call2"
-                />
-
-            <TextView
-                android:id="@+id/edmob1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/refdeicon"
-                android:layout_toRightOf="@id/refdeicon"
-                android:fontFamily="@font/metropolismedium"
-                android:paddingLeft="20dp"
-                android:paddingBottom="10dp"
-                android:singleLine="true"
-                android:text="9892608968"
-                android:textSize="15sp" />
-
-
-            <ImageView
-                android:id="@+id/refdeicon2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="170dp"
-                android:layout_marginRight="0dp"
-                android:layout_toRightOf="@id/edmob1"
-                android:fontFamily="@font/helveticamedium"
-                android:src="@drawable/call2" />
-
-
-        </RelativeLayout>
-
-
-        <!--MOb2-->
-        <RelativeLayout
-            android:id="@+id/relrefd3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/relrefd2"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp">
-
-
-            <TextView
-                android:id="@+id/edmob2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/metropolismedium"
-                android:paddingLeft="20dp"
-                android:layout_marginTop="7sp"
-
-                android:singleLine="true"
-                android:layout_marginLeft="40sp"
-                android:text="9892608968"
-                android:textSize="15sp" />
-
-
-            <ImageView
-                android:id="@+id/refdeicon3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/edmob2"
-                android:layout_marginLeft="170dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:layout_toRightOf="@+id/edmob2"
-                android:fontFamily="@font/helveticamedium"
-                android:src="@drawable/call"
-                android:layout_alignParentRight="true" />
-
-
-        </RelativeLayout>
-
-
         <!--Address 1-->
         <RelativeLayout
-            android:id="@+id/relrefd4"
+            android:id="@+id/relprofaddress1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/relrefd3"
+            android:layout_below="@id/relprofemailid"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp">
 
             <ImageView
-                android:id="@+id/imgadd3"
+                android:id="@+id/pdicon5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:padding="8dp"
@@ -288,23 +270,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/imgadd3"
-                android:layout_toRightOf="@id/imgadd3"
-                android:orientation="vertical"
-                >
-            <TextView
-                android:id="@+id/txtrepdadd3"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_alignBottom="@id/pdicon5"
+                android:layout_toRightOf="@id/pdicon5"
+                android:orientation="vertical">
 
-                android:inputType="textPostalAddress"
-                android:paddingLeft="20dp"
-                android:fontFamily="@font/metropolismedium"
-                android:paddingBottom="10dp"
-                android:singleLine="true"
-                android:text="F-01, MAHAPE , ADHIRAJ GARDANS"
-                android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/txtrepdadd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/metropolismedium"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="F-01, mahape , adhiraj "
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
@@ -312,10 +292,10 @@
 
         <!--Address 2-->
         <RelativeLayout
-            android:id="@+id/relrefd5"
+            android:id="@+id/relprofaddress2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/relrefd4"
+            android:layout_below="@id/relprofaddress1"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp">
 
@@ -334,11 +314,10 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/metropolismedium"
 
-                    android:inputType="textPostalAddress"
                     android:layout_marginLeft="60sp"
                     android:paddingBottom="10sp"
                     android:singleLine="true"
-                    android:text="SECTOR 5 , KHARGHAR"
+                    android:text="sector 5 , kharghar"
                     android:textSize="15sp"/>
 
             </LinearLayout>
@@ -348,10 +327,10 @@
 
         <!--Address 3-->
         <RelativeLayout
-            android:id="@+id/relrefd6"
+            android:id="@+id/relprofaddress3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/relrefd5"
+            android:layout_below="@id/relprofaddress2"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp">
 
@@ -370,31 +349,38 @@
                     android:layout_marginLeft="60sp"
                     android:paddingBottom="10sp"
                     android:singleLine="true"
-                    android:text="F-01, MAHAPE , ADHIRAJ GARDANS"
+                    android:text="F-01, mahape , adhiraj gardan"
                     android:textSize="15sp"/>
 
             </LinearLayout>
 
         </RelativeLayout>
+    </LinearLayout>
+        <!--Update bthe fields-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
 
 
-        <!--Status-->
-
-
-            <!--BACK BUTTON-->
             <Button
-                android:id="@+id/btnback"
+                android:id="@+id/btnprofback"
                 android:layout_width="match_parent"
+                android:layout_below="@id/relprofaddress3"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="@dimen/scale_10dp"
-                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:background="@android:drawable/dialog_holo_light_frame"
                 android:backgroundTint="#f8a519"
-                android:fontFamily="@font/helveticamedium"
+                android:layout_marginLeft="@dimen/scale_10dp"
+                android:layout_marginRight="@dimen/scale_10dp"
+                android:fontFamily="@font/metropolismedium"
                 android:text="@string/back"
                 android:textColor="@color/black" />
 
+        </LinearLayout>
+
+
 
     </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

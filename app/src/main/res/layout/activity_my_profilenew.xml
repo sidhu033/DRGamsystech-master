@@ -86,14 +86,17 @@
             android:layout_below="@+id/relpdetails"
             app:cardUseCompatPadding="true"
             app:cardPreventCornerOverlap="false"
-            app:cardCornerRadius="@dimen/scale_10dp"
-            app:cardElevation="@dimen/scale_10dp"
+            app:cardCornerRadius="@dimen/scale_5dp"
+            android:layout_marginLeft="@dimen/scale_5dp"
+            android:layout_marginRight="@dimen/scale_5dp"
+            app:cardElevation="@dimen/scale_5dp"
+
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/scale_5dp"
+                android:padding="@dimen/scale_10dp"
                 >
 
                 <ImageView
@@ -126,15 +129,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mypcard1"
-        app:cardElevation="@dimen/scale_10dp"
-        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardUseCompatPadding="true"
         app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="true">
+        app:cardCornerRadius="@dimen/scale_5dp"
+        android:layout_marginLeft="@dimen/scale_5dp"
+        android:layout_marginRight="@dimen/scale_5dp"
+        app:cardElevation="@dimen/scale_5dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/scale_5dp"
+            android:padding="@dimen/scale_10dp"
             android:weightSum="2">
 
             <ImageView
@@ -168,16 +174,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mypcard2"
-        app:cardMaxElevation="@dimen/scale_10dp"
-        app:cardElevation="@dimen/scale_10dp"
-        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardUseCompatPadding="true"
         app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="true">
+        app:cardCornerRadius="@dimen/scale_5dp"
+        android:layout_marginLeft="@dimen/scale_5dp"
+        android:layout_marginRight="@dimen/scale_5dp"
+        app:cardElevation="@dimen/scale_5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/scale_5dp"
+            android:padding="@dimen/scale_10dp"
             android:weightSum="2">
 
             <ImageView
@@ -209,16 +216,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mypcard3"
-        app:cardMaxElevation="@dimen/scale_10dp"
-        app:cardElevation="@dimen/scale_10dp"
-        app:cardCornerRadius="@dimen/scale_10dp"
+        app:cardUseCompatPadding="true"
         app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="true">
+        app:cardCornerRadius="@dimen/scale_5dp"
+        android:layout_marginLeft="@dimen/scale_5dp"
+        android:layout_marginRight="@dimen/scale_5dp"
+        app:cardElevation="@dimen/scale_5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/scale_5dp"
+            android:padding="@dimen/scale_10dp"
             android:weightSum="2">
 
             <ImageView
@@ -251,16 +259,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mypcard4"
-        app:cardMaxElevation="@dimen/scale_10dp"
-        app:cardElevation="@dimen/scale_10dp"
-        app:cardCornerRadius="@dimen/scale_10dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="@dimen/scale_5dp"
+        android:layout_marginLeft="@dimen/scale_5dp"
+        android:layout_marginRight="@dimen/scale_5dp"
+        app:cardElevation="@dimen/scale_5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/scale_5dp"
+            android:padding="@dimen/scale_10dp"
             android:weightSum="2">
 
             <ImageView

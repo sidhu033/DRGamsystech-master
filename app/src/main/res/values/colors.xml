@@ -14,6 +14,6 @@
     <color name="gray">#dadada</color>
     <color name="yellow">#f8a519</color>
     <color name="green">#0c5137</color>
-
+    <color name="textboxcolor">#e0e0e0</color>
     <color name="red">#df3930</color>
 </resources>

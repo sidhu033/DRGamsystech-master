@@ -30,7 +30,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.user.drgamsystech.Fragment.Fragment1;
+import com.example.user.drgamsystech.Fragment.ExpectedEarningFragment;
 import com.example.user.drgamsystech.R;
 import com.example.user.drgamsystech.adapters.MenusAdapter;
 import com.example.user.drgamsystech.pojo.MenuVo;
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity
                     case R.id.account:
                         if(id ==R.id.account)
                         {
-                            Fragment fragment = new Fragment1();
+                            Fragment fragment = new ExpectedEarningFragment();
                             startActivity(new Intent(getApplicationContext(),MyProfile.class));
                         }
 

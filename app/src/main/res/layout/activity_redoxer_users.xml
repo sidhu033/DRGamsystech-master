@@ -45,6 +45,9 @@
 
     </android.support.v7.widget.Toolbar>
 
+
+    <include layout="@layout/search_toolbar"
+        android:visibility="gone"/>
 <!--
     <RelativeLayout
         android:id="@+id/post_text_layout"

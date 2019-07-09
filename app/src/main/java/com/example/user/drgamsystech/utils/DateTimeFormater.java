@@ -4,6 +4,8 @@
 
 package com.example.user.drgamsystech.utils;
 
+import android.widget.EditText;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -59,4 +61,11 @@ public class DateTimeFormater
             return null;
         }
     }
+    //current date time Formation
+    public String getCurrentDateTime(){
+        return java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
+
+    }
+
+
 }

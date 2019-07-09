@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.user.drgamsystech.R;
 
-public class Fragment2 extends Fragment
+public class PaidUnpaidFragment extends Fragment
 {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState)

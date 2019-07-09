@@ -76,8 +76,13 @@
         <activity
             android:name=".activity.FollowupDetails"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.ProfessionalDetails" />
-        <activity android:name=".activity.BankDetails" />
+
+        <activity android:name=".activity.ProfessionalDetails"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".activity.BankDetails"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity android:name=".activity.PersonalProfile"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

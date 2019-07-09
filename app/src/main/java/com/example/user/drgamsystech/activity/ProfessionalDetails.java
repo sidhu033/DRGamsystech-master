@@ -11,16 +11,16 @@ import android.widget.TextView;
 import com.example.user.drgamsystech.R;
 public class ProfessionalDetails extends AppCompatActivity
 {
-        Button btnprfback;
-        EditText clname;
+        /*Button btnprfback;
+        EditText clname;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_professional_details);
+        setContentView(R.layout.activity_professional_details_show);
 
-        btnprfback =findViewById(R.id.btnprfback);
+     /* //  btnprfback =findViewById(R.id.btnprfback);
         clname = findViewById(R.id.clname);
 
         clname.setFocusable(false);
@@ -30,7 +30,7 @@ public class ProfessionalDetails extends AppCompatActivity
                 clname.setFocusableInTouchMode(true); //to enable it
             }
         });
-
+*/
     }
     /*End of oncreate*/
 }

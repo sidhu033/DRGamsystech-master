@@ -51,22 +51,23 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:weightSum="2"
         android:orientation="vertical">
 
         <fragment
-            android:name="com.example.user.drgamsystech.Fragment.Fragment1"
+            android:name="com.example.user.drgamsystech.Fragment.ExpectedEarningFragment"
             android:id="@+id/fragment1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="40">
+            android:layout_weight="1">
 
         </fragment>
         <fragment
-            android:name="com.example.user.drgamsystech.Fragment.Fragment2"
+            android:name="com.example.user.drgamsystech.Fragment.PaidUnpaidFragment"
             android:id="@+id/fragment2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="60">
+            android:layout_weight="1">
 
         </fragment>
     </LinearLayout>

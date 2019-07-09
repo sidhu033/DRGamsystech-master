@@ -228,7 +228,7 @@
             android:textStyle="bold"/>
     </RelativeLayout>
 
-    <ProgressBar
+  <!--  <ProgressBar
         android:id="@+id/loginprogress"
         android:layout_below="@+id/relloginmain"
         android:layout_width="wrap_content"
@@ -236,6 +236,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:theme="@style/AppTheme.WhiteAccent"
-        />
+        />-->
     <!-- </android.support.v7.widget.CardView>-->
 </RelativeLayout>
