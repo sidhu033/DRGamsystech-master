@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.RedoxerUserDetails">
+
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/redoxudtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0d141c"
+        app:contentScrim="#0d141c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/imvuh"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/scale_5dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gham" />
+
+            <TextView
+                android:id="@+id/txtuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/metropolismedium"
+                android:text="@string/rud"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgauh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/scale_5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                app:srcCompat="@drawable/right_dot_menu" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--Toolbar Closed-->
+
+    <LinearLayout
+        android:id="@+id/llrud1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/redoxudtoolbar"
+
+        android:padding="@dimen/scale_10dp">
+
+        <TextView
+            android:id="@+id/txtruddor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dor"
+            android:fontFamily="@font/metropolismedium"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/scale_5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtruddordate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="left"
+                android:inputType="date"
+                android:text="22 MAR 2019"
+                android:textColor="@color/yellow"
+                android:textSize="18sp" />
+
+
+          <!--  <ImageView
+                android:id="@+id/dolimgview"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:src="@drawable/pencile512" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="145dp"
+        app:layout_constraintTop_toBottomOf="@+id/llrud1"
+        >
+
+
+
+        <!-- Name name-->
+        <RelativeLayout
+            android:id="@+id/relredoud1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iconrud1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtrudname1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconrud1"
+                android:layout_toRightOf="@id/iconrud1"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="Name of Patient"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- EmailId name-->
+        <RelativeLayout
+            android:id="@+id/relredoud2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relredoud1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iconrud3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtrudmob1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconrud3"
+                android:layout_toRightOf="@id/iconrud3"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="Email ID OF Patient"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+
+        <!-- MOb1 name-->
+        <RelativeLayout
+            android:id="@+id/relredoud3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relredoud2"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iconrud4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:id="@+id/txtrudmobl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iconrud4"
+                android:layout_toRightOf="@id/iconrud4"
+                android:fontFamily="@font/metropolismedium"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="Mobile Number "
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp_10"
+                android:src="@drawable/call3"
+                />
+
+        </RelativeLayout>
+
+
+        <!-- MOb2 name-->
+        <RelativeLayout
+            android:id="@+id/relredoud4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/relredoud3"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+
+            <TextView
+                android:id="@+id/txtrudmob2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/metropolismedium"
+                android:layout_marginLeft="50sp"
+                android:textDirection="firstStrong"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:text=" Alternative Mobile Number "
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_height="25sp"
+
+                android:src="@drawable/call3"
+                />
+
+
+        </RelativeLayout>
+
+        <!--Address 1-->
+        <RelativeLayout
+            android:id="@+id/relredoud5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relredoud4"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iconrud5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/location"
+                />
+
+
+            <TextView
+                android:id="@+id/txtrudadd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconrud5"
+                android:layout_toRightOf="@id/iconrud5"
+                android:layout_weight="1"
+                android:padding="11sp"
+                android:layout_marginLeft="10sp"
+                android:fontFamily="@font/metropolismedium"
+                android:singleLine="true"
+                android:text="Address 1"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+        <!--Address 2-->
+        <RelativeLayout
+            android:id="@+id/relredoud6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relredoud5"
+           android:layout_below="@+id/relredoud5"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/txtrudadd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/metropolismedium"
+                android:layout_marginLeft="@dimen/sp_50"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:text="sector , name of city"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+
+        <!--Address 3-->
+        <RelativeLayout
+            android:id="@+id/relredoud7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relredoud6"
+            android:layout_below="@+id/relredoud6"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtrudadd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metropolismedium"
+                    android:inputType="textPostalAddress"
+
+                    android:layout_marginLeft="@dimen/sp_50"
+                    android:padding="10sp"
+                    android:singleLine="true"
+                    android:text="street name, pincode"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatrudadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/addplus"
+            app:fabSize="auto"
+            app:useCompatPadding="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnrudback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="#f8a519"
+                android:fontFamily="@font/metropolismedium"
+                android:text="@string/trackhealth"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

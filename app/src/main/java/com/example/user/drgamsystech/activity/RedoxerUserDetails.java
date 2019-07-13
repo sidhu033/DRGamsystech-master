@@ -22,7 +22,7 @@ import java.io.FileInputStream;
 
 public class RedoxerUserDetails extends AppCompatActivity
 {
-    Toolbar uhutoolbar;
+   /*Toolbar uhutoolbar;
     FloatingActionButton floatdouadd;
     Button trackhealth,btnshow;
     TextView edurefdname,edemail,edurefdmob1,edurefdmob2 ,txtrepdadd1,txtrepdadd2 ,txtrepdadd3;
@@ -32,22 +32,22 @@ public class RedoxerUserDetails extends AppCompatActivity
     String rudmob2;
     String rudadd1;
     String rudadd2;
-    String rudadd3;
+    String rudadd3;*/
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_redoxer_user_details);
+        setContentView(R.layout.activity_redoxer_user_details2);
 
         /*Intilization*/
-        initilization();
-        onclicklistner();
+      //  initilization();
+       // onclicklistner();
 
 
     }
     //oncreate closed
 
-    private void initilization()
+   /* private void initilization()
     {
         floatdouadd = findViewById(R.id.floatdouadd);
         trackhealth = findViewById(R.id.btntrackhelath);
@@ -69,9 +69,9 @@ public class RedoxerUserDetails extends AppCompatActivity
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.gham);
 
-    }
+    }*/
 
-    private void onclicklistner()
+   /* private void onclicklistner()
     {
         floatdouadd.setOnClickListener(new View.OnClickListener()
         {
@@ -104,8 +104,8 @@ public class RedoxerUserDetails extends AppCompatActivity
         });
 
 
-    }
-    public void load(View view)
+    }*/
+   /* public void load(View view)
     {
         try
         {
@@ -138,7 +138,7 @@ public class RedoxerUserDetails extends AppCompatActivity
             txtrepdadd2.setText(rudadd2);
             txtrepdadd3.setText(rudadd3);
 
-           /* rudname = buffer.substring(0,buffer.indexOf(""));
+           *//* rudname = buffer.substring(0,buffer.indexOf(""));
             rudemail = buffer.substring(buffer.indexOf(""));
             rudmob1 = buffer.substring(buffer.indexOf(""));
             rudmob2 = buffer.substring(buffer.indexOf(""));
@@ -152,7 +152,7 @@ public class RedoxerUserDetails extends AppCompatActivity
             edurefdmob2.setText(rudmob2);
             txtrepdadd1.setText(rudadd1);
             txtrepdadd2.setText(rudadd2);
-            txtrepdadd3.setText(rudadd3);*/
+            txtrepdadd3.setText(rudadd3);*//*
 
         }
         catch (Exception e)
@@ -162,7 +162,7 @@ public class RedoxerUserDetails extends AppCompatActivity
         Toast.makeText(this,"Loaded", Toast.LENGTH_SHORT).show();
 
     }
-
+*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {

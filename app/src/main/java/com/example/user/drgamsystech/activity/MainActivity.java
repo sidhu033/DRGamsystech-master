@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity
         drnavigation = findViewById(R.id.drnavigation);
         NavigationMenuView drmenuView = (NavigationMenuView) drnavigation.getChildAt(0);
         drmenuView.addItemDecoration(new DividerItemDecoration(MainActivity.this,DividerItemDecoration.VERTICAL));
+
         drnavigation.setItemTextColor(new ColorStateList            //to change colour of menus
                 (
 
@@ -139,6 +140,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(MainActivity.this,ReferedPatients.class));
             }
         });
+
         drnavigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
         {
             @Override

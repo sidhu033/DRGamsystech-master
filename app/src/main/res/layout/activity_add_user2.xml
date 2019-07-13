@@ -31,21 +31,18 @@
                 android:layout_centerVertical="true"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
-
                 android:src="@drawable/gham" />
 
             <TextView
                 android:id="@+id/txtautitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_centerHorizontal="true"
-                android:gravity="center"
                 android:layout_centerInParent="true"
                 android:text="@string/addpatient"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:fontFamily="@font/metropolismedium"
+                android:textSize="18sp"
+                android:fontFamily="@font/metropolisregular"
                 />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
@@ -54,7 +51,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/scale_5dp"
+        android:padding="@dimen/sp_10"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/adutoolbar">
 
         <!--Name-->
@@ -65,28 +63,32 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
+
 
             <ImageView
                 android:id="@+id/userIcon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="7dp"
-                android:src="@drawable/iconmen" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
+
+
 
             <EditText
                 android:id="@+id/eduname"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:background="@color/textboxcolor"
                 android:layout_alignBottom="@id/userIcon"
                 android:layout_toRightOf="@id/userIcon"
-                android:background="@null"
                 android:paddingLeft="10sp"
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/namenew"
                 android:inputType="text"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
 
@@ -99,14 +101,14 @@
             android:layout_below="@+id/llrelname"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+            >
 
             <ImageView
                 android:id="@+id/iconemail"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/iconbank" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/eduemail"
@@ -120,9 +122,11 @@
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/email"
                 android:inputType="text"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="10sp"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
 
@@ -137,14 +141,14 @@
             android:layout_below="@+id/llrelemail"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconmob1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/edumob1"
@@ -153,14 +157,15 @@
                 android:layout_alignBottom="@id/iconmob1"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="10sp"
                 android:layout_toRightOf="@id/iconmob1"
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/mobile"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
 
@@ -173,14 +178,14 @@
             android:layout_below="@+id/llrelmob1"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconmob2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/edumob2"
@@ -189,14 +194,15 @@
                 android:layout_alignBottom="@id/iconmob2"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-
+                android:layout_marginLeft="@dimen/sp_10"
+                android:background="@color/textboxcolor"
                 android:layout_toRightOf="@id/iconmob2"
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/altmobile"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
 
@@ -209,14 +215,14 @@
             android:layout_below="@+id/llrelmob2"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconpin"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/edupincode"
@@ -225,14 +231,15 @@
                 android:layout_alignBottom="@id/iconpin"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-
+                android:layout_marginLeft="@dimen/sp_10"
+                android:background="@color/textboxcolor"
                 android:layout_toRightOf="@id/iconpin"
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/pincode"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
 
@@ -245,14 +252,14 @@
             android:layout_below="@+id/llrelpin"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconhouse"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/eduhouseno"
@@ -263,11 +270,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@id/iconhouse"
                 android:fontFamily="@font/metropolismedium"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="@dimen/sp_10"
                 android:hint="@string/houseno"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
         <!-- Street Details -->
@@ -279,14 +288,14 @@
             android:layout_below="@+id/llrelhouseno"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconstreet"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/edustreet"
@@ -295,6 +304,8 @@
                 android:layout_alignBottom="@id/iconstreet"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="@dimen/sp_10"
 
                 android:layout_toRightOf="@id/iconstreet"
                 android:fontFamily="@font/metropolismedium"
@@ -302,7 +313,7 @@
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
         <!-- Area Details -->
@@ -314,14 +325,14 @@
             android:layout_below="@+id/llrelstreet"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconarea"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/eduarea"
@@ -330,13 +341,15 @@
                 android:layout_alignBottom="@id/iconarea"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="@dimen/sp_10"
                 android:layout_toRightOf="@id/iconarea"
                 android:fontFamily="@font/metropolismedium"
                 android:hint="@string/area"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
         <!-- City Details -->
@@ -348,14 +361,14 @@
             android:layout_below="@+id/llrelarea"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconcity"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/educity"
@@ -366,11 +379,14 @@
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@id/iconcity"
                 android:fontFamily="@font/metropolismedium"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="@dimen/sp_10"
+
                 android:hint="@string/city"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
         <!-- state Details -->
@@ -382,14 +398,14 @@
             android:layout_below="@+id/llrelcity"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:background="@color/textboxcolor">
+           >
 
             <ImageView
                 android:id="@+id/iconstate"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:padding="8dp"
-                android:src="@drawable/icontie" />
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+
+                android:src="@drawable/regiconname" />
 
             <EditText
                 android:id="@+id/edustate"
@@ -400,17 +416,18 @@
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@id/iconstate"
                 android:fontFamily="@font/metropolismedium"
+                android:background="@color/textboxcolor"
+                android:layout_marginLeft="@dimen/sp_10"
                 android:hint="@string/state"
                 android:inputType="text"
                 android:paddingLeft="10dp"
                 android:singleLine="true"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true">
@@ -422,12 +439,6 @@
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/dialog_holo_light_frame"
                 android:backgroundTint="#f8a519"
-
-
-
-
-                android:layout_marginLeft="@dimen/scale_10dp"
-                android:layout_marginRight="@dimen/scale_10dp"
                 android:onClick="save"
                 android:fontFamily="@font/helveticamedium"
                 android:text="@string/add"

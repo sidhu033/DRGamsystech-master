@@ -48,7 +48,7 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <!-- bank name-->
+    <!-- Account Number-->
     <RelativeLayout
         android:id="@+id/relbank1"
         android:layout_width="match_parent"
@@ -76,11 +76,11 @@
             android:gravity="center|left"
             android:paddingLeft="20dp"
             android:singleLine="true"
-            android:text="Shaddy Bank"
+            android:text="Account NUmber"
             android:textSize="15sp" />
     </RelativeLayout>
 
-    <!-- account holder name-->
+    <!-- IFSC code name-->
     <RelativeLayout
         android:id="@+id/relbank2"
         android:layout_width="match_parent"
@@ -108,11 +108,11 @@
             android:gravity="center|left"
             android:paddingLeft="20dp"
             android:singleLine="true"
-            android:text="Shaddy Basgowari"
+            android:text="IFSC Code"
             android:textSize="15sp" />
     </RelativeLayout>
 
-    <!-- Branchr name-->
+    <!-- Bank  name-->
     <RelativeLayout
         android:id="@+id/relbank3"
         android:layout_width="match_parent"
@@ -140,10 +140,11 @@
             android:gravity="center|left"
             android:paddingLeft="20dp"
             android:singleLine="true"
-            android:text="BG-210000"
+            android:text="Bank Name"
             android:textSize="15sp" />
     </RelativeLayout>
-    <!-- Branchr name-->
+
+    <!-- Branch name-->
     <RelativeLayout
         android:id="@+id/relbank4"
         android:layout_width="match_parent"
@@ -171,9 +172,77 @@
             android:gravity="center|left"
             android:paddingLeft="20dp"
             android:singleLine="true"
-            android:text="2014594821"
+            android:text="Branch Name"
             android:textSize="15sp" />
     </RelativeLayout>
+
+
+    <!-- Type Of Account-->
+    <RelativeLayout
+        android:id="@+id/relbank5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/relbank4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/iconbank5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/message"
+            />
+
+        <TextView
+            android:id="@+id/txtbanktoa5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/iconbank5"
+            android:layout_toRightOf="@id/iconbank5"
+            android:fontFamily="@font/metropolismedium"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="Type Of Account"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <!-- Customer ID-->
+    <RelativeLayout
+        android:id="@+id/relbank6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/relbank5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/iconbank6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/message"
+            />
+
+        <TextView
+            android:id="@+id/txtbankcid6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/iconbank6"
+            android:layout_toRightOf="@id/iconbank6"
+            android:fontFamily="@font/metropolismedium"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="Customer ID"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
 
     <!--Update bthe fields-->
     <LinearLayout

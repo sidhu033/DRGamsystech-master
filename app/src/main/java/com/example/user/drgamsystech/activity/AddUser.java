@@ -40,12 +40,8 @@ public class AddUser extends AppCompatActivity {
         setContentView(R.layout.activity_add_user2);
 
         /*Initilization*/
-
         initilization();
         onclicklistner();
-
-
-
 
     }
     //close user

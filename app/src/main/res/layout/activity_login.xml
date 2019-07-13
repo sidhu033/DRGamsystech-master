@@ -40,7 +40,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
                 android:layout_centerInParent="true"
-                android:fontFamily="@font/helveticabold"
+                android:fontFamily="@font/metropolismedium"
                 android:text="@string/LogIn"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
@@ -103,7 +103,7 @@
                 android:maxLength="20"
                 android:layout_toRightOf="@id/userlogIcon"
                 android:background="@color/gray"
-                android:fontFamily="@font/helveticamedium"
+                android:fontFamily="@font/metropolismedium"
                 android:hint="@string/namea"
                 android:inputType="text"
                 android:paddingLeft="10dp"
@@ -147,7 +147,7 @@
                 android:layout_toRightOf="@id/imgpass"
                 android:background="@color/gray"
                 android:maxLength="8"
-                android:fontFamily="@font/helveticamedium"
+                android:fontFamily="@font/metropolismedium"
                 android:hint="@string/Logpass"
                 android:inputType="textPassword"
                 android:ems="6"
@@ -201,7 +201,7 @@
                 android:background="@android:drawable/dialog_holo_light_frame"
                 android:backgroundTint="#f8a519"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="HelveticaNeue"
+               android:fontFamily="@font/metropolismedium"
                 android:text="@string/LogIn"
                 android:textColor="@color/black" />
 
@@ -213,8 +213,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             app:passwordToggleEnabled="true"
-
             android:textColor="@color/black"/>
+
         <TextView
             android:id="@+id/txtforgpass"
             android:layout_width="wrap_content"
@@ -224,8 +224,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="5dp"
             android:layout_below="@+id/llsignin"
+            android:fontFamily="@font/metropolismedium"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+           />
     </RelativeLayout>
 
   <!--  <ProgressBar
